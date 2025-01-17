@@ -1,0 +1,139 @@
+Starting Dynare (version 6.2).
+Calling Dynare with arguments: -DEXPW=0.8 -DECONW=0.8 -DREACTW=0.8
+Starting preprocessing of the model file ...
+Substitution of endo lags >= 2: added 4 auxiliary variables and equations.
+Found 15 equation(s).
+Evaluating expressions...
+Computing static model derivatives (order 1).
+Normalizing the static model...
+Finding the optimal block decomposition of the static model...
+7 block(s) found:
+  6 recursive block(s) and 1 simultaneous block(s).
+  the largest simultaneous block has 9 equation(s)
+                                 and 9 feedback variable(s).
+Computing dynamic model derivatives (order 2).
+Normalizing the dynamic model...
+Finding the optimal block decomposition of the dynamic model...
+3 block(s) found:
+  2 recursive block(s) and 1 simultaneous block(s).
+  the largest simultaneous block has 9 equation(s)
+                                 and 8 feedback variable(s).
+Preprocessing completed.
+Preprocessing time: 0h00m00s.
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+               0                0                0
+               0                0                0
+               0                0                0
+               0                0                0
+               0                0                0
+         0.02757          0.02757                0
+             0.7              0.7                0
+             0.8              0.8                0
+             0.9              0.9                0
+             0.9              0.9                0
+             0.9              0.9                0
+           1.122            1.111           0.1564
+           1.122            1.111          -0.1564
+             Inf              Inf                0
+
+There are 3 eigenvalue(s) larger than 1 in modulus for 3 forward-looking variable(s)
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         15
+  Number of stochastic shocks: 5
+  Number of state variables:   11
+  Number of jumpers:           3
+  Number of static variables:  4
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables       eps_a     eps_g     eps_u     eps_v     eps_e
+eps_a        1.000000  0.000000  0.000000  0.000000  0.000000
+eps_g        0.000000  0.000000  0.000000  0.000000  0.000000
+eps_u        0.000000  0.000000  0.000000  0.000000  0.000000
+eps_v        0.000000  0.000000  0.000000  1.000000  0.000000
+eps_e        0.000000  0.000000  0.000000  0.000000  1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                   y              ii              rn             pie               a               g               u               v               e              ex               m
+Constant                           0        0.010101        0.010101               0               0               0               0               0               0               0               0
+g(-1)                       1.079209        2.828827               0        2.267421               0        0.900000               0               0               0        1.682551               0
+u(-1)                      -2.550353        2.150113               0        2.004291               0               0        0.800000               0               0        1.326950               0
+v(-1)                      -1.024315       -0.156824               0       -0.628661               0               0               0        0.700000               0       -0.365915               0
+e(-1)                       1.079209        2.828827               0        2.267421               0               0               0               0        0.900000        2.582551               0
+pie(-1)                     0.156211        0.048703               0        0.027569               0               0               0               0               0        0.200608               0
+a(-1)                      -0.107921       -0.282883       -0.090000       -0.226742        0.900000               0               0               0               0       -0.168255               0
+eps_a                      -0.119912       -0.314314       -0.100000       -0.251936        1.000000               0               0               0               0       -0.186950               0
+eps_g                       1.199121        3.143141               0        2.519357               0        1.000000               0               0               0        1.869501               0
+eps_u                      -3.187941        2.687642               0        2.505363               0               0        1.000000               0               0        1.658688               0
+eps_v                      -1.463307       -0.224034               0       -0.898086               0               0               0        1.000000               0       -0.522736               0
+eps_e                       1.199121        3.143141               0        2.519357               0               0               0               0        1.000000        2.869501               0
+
+
+MOMENTS OF SIMULATED VARIABLES
+VARIABLE              MEAN       STD. DEV.        VARIANCE        SKEWNESS        KURTOSIS
+y                 0.037147        4.006141       16.049165       -0.067747       -0.419655
+ii                0.425934        7.328101       53.701061       -0.120285       -0.405387
+rn                0.008212        0.241965        0.058547       -0.134575       -0.366249
+pie               0.249658        5.852903       34.256477       -0.078151       -0.496974
+a                 0.018886        2.419650        5.854705        0.134575       -0.366249
+g                -0.000000        0.000000        0.000000             NaN             NaN
+u                 0.000000        0.000000        0.000000             NaN             NaN
+v                 0.112529        1.431706        2.049782        0.142915       -0.031250
+e                 0.138430        2.227850        4.963316       -0.133528       -0.303606
+ex                0.383777        7.471952       55.830059       -0.105716       -0.454920
+m                 0.000000        0.000000        0.000000             NaN             NaN
+
+
+CORRELATION OF SIMULATED VARIABLES
+VARIABLE          y       ii       rn      pie        a        g        u        v        e       ex        m
+y            1.0000   0.8534   0.2274   0.9294  -0.2274      NaN      NaN  -0.4713   0.8119   0.8903      NaN
+ii           0.8534   1.0000   0.1866   0.9847  -0.1866      NaN      NaN   0.0491   0.9921   0.9957      NaN
+rn           0.2274   0.1866   1.0000   0.2060  -1.0000      NaN      NaN  -0.1192   0.0734   0.1654      NaN
+pie          0.9294   0.9847   0.2060   1.0000  -0.2060      NaN      NaN  -0.1257   0.9658   0.9924      NaN
+a           -0.2274  -0.1866  -1.0000  -0.2060   1.0000      NaN      NaN   0.1192  -0.0734  -0.1654      NaN
+g               NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN
+u               NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN
+v           -0.4713   0.0491  -0.1192  -0.1257   0.1192      NaN      NaN   1.0000   0.1128  -0.0211      NaN
+e            0.8119   0.9921   0.0734   0.9658  -0.0734      NaN      NaN   0.1128   1.0000   0.9856      NaN
+ex           0.8903   0.9957   0.1654   0.9924  -0.1654      NaN      NaN  -0.0211   0.9856   1.0000      NaN
+m               NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES
+VARIABLE         1       2       3       4       5
+y           0.8832  0.7612  0.6571  0.5694  0.4917
+ii          0.9051  0.8160  0.7296  0.6545  0.5842
+rn          0.9097  0.8223  0.7429  0.6665  0.5942
+pie         0.8954  0.8026  0.7153  0.6393  0.5675
+a           0.9097  0.8223  0.7429  0.6665  0.5942
+g              NaN     NaN     NaN     NaN     NaN
+u              NaN     NaN     NaN     NaN     NaN
+v           0.7120  0.5291  0.3848  0.2836  0.1994
+e           0.8973  0.8094  0.7238  0.6494  0.5797
+ex          0.9224  0.8296  0.7424  0.6649  0.5941
+m              NaN     NaN     NaN     NaN     NaN
+
+
+
+VARIANCE DECOMPOSITION SIMULATING ONE SHOCK AT A TIME (in percent)
+                  eps_a             eps_g             eps_u             eps_v             eps_e  Tot. lin. contr.
+y                  0.91              0.00              0.00             31.47             76.54            108.91
+ii                 1.16              0.00              0.00              0.25             98.14             99.56
+rn               100.11              0.00              0.00              0.00              0.00            100.11
+pie                1.14              0.00              0.00              5.03             96.82            102.99
+a                100.11              0.00              0.00              0.00              0.00            100.11
+g                   NaN               NaN               NaN               NaN               NaN               NaN
+u                   NaN               NaN               NaN               NaN               NaN               NaN
+v                  0.00              0.00              0.00            100.11              0.00            100.11
+e                  0.00              0.00              0.00              0.00            100.11            100.11
+ex                 0.58              0.00              0.00              1.63             99.50            101.71
+m                   NaN               NaN               NaN               NaN               NaN               NaN
+Note: numbers do not add up to 100 due to non-zero correlation of simulated shocks in small samples
+
+Total computing time : 0h00m04s
